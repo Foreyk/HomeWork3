@@ -16,6 +16,7 @@ public class Main {
         task7();
         System.out.println("\n");
         task8();
+
     }
 
 
@@ -148,8 +149,8 @@ public class Main {
 
     private static void printNewSalary(String name, Float oldSalary, double percent) {
         var newSalary = oldSalary * percent;
-        System.out.printf("Старая зарплата у сотрудника %s состовляла - %.2f рублей.\n", name, oldSalary);
-        System.out.printf("После повышения - %.2f рублей, прирост составил - %.2f рублей. \n", newSalary, newSalary - oldSalary);
+        System.out.printf("Годовая зарплата до повышения у сотрудника %s состовляла - %.2f рублей.\n", name, oldSalary);
+        System.out.printf("После повышения - %.2f рублей, годовой прирост составил - %.2f рублей. \n", newSalary, (newSalary - oldSalary) * 12);
         System.out.println();
     }
 
